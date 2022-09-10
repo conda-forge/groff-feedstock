@@ -1,5 +1,7 @@
 set -x
 
+export CXXFLAGS="${CXXFLAGS} -Wno-register"
+
 autoreconf -vfi
 ./configure --prefix=$PREFIX
 
