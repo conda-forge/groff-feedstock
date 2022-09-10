@@ -15,5 +15,5 @@ find $SRC_DIR -type f | \
 # Workaround for randomly occuring failure due to incorrect dep-graph in Makefile
 # /usr/bin/install: cannot stat './font/devpdf/download': No such file or directory
 make -j${CPU_COUNT} font/devpdf/build_font_files
-make -j${CPU_COUNT} install
+make -j1 install
 make check
